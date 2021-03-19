@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Selectors</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: salmon;
+    }
+
+    h1,
+    h2 {
+      color: white;
+    }
+
+    .note {
+      font-size: 24px;
+      color: rgb(0, 255, 42);
+    }
+
+    #introducing {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    li>a {
+      text-decoration: none;
+      color: chartreuse;
+    }
+
+    p a {
+      text-decoration: none;
+      color: aqua;
+      font-weight: bold;
+    }
+
+    h1+p {
+      color: red;
+    }
+
+    h1~p {
+      color: blueviolet;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="top">Kitchen Garden Calender</h1>
+  <p id="introducing">Here you can read our handy guide about what to do when.</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum sunt laudantium optio cupiditate, officiis
+    expedita nulla iste sit porro accusantium! Laborum aperiam excepturi ad, accusamus perspiciatis itaque ex repellat.
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur.</p>
+  <h2>Spring</h2>
+  <ul>
+    <li><a href="mulch.html">Mulch</a></li>
+    <li><a href="potatoes.html">Potatoes</a></li>
+    <li><a href="tomato.html">Tomato</a></li>
+  </ul>
+  <p class="note">
+    This page written by
+    <a href="mailto: hakimasrori24@gmail.com">Hakim Asrori</a>
+    for <a href="http://rilozpedia.co.vu">Example</a>
+  </p>
+  <p><a href="#top">Top of page</a></p>
+
+
+
+</body>
+
+</html>

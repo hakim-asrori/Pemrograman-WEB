@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Column Layout Flexbox</title>
+  <style>
+    main {
+      display: flex;
+    }
+
+    article {
+      flex: 1 1 50%;
+      order: 2;
+      background-color: linen;
+    }
+
+    #news {
+      flex: 1 1 25%;
+      order: 3;
+      background-color: limegreen;
+    }
+
+    #contact {
+      flex: 1 1 25%;
+      order: 1;
+      background-color: red;
+    }
+
+    header,
+    footer {
+      color: white;
+      background-color: lightslategrey;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Hakim Asrori</header>
+  <main>
+    <article>
+      <h2>Hello World</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dignissimos.
+      </p>
+    </article>
+    <aside id="news">
+      <h2>News</h2>
+    </aside>
+    <aside id="contact">
+      <h2>Contact</h2>
+    </aside>
+  </main>
+  <footer>
+    Create by hakim
+  </footer>
+</body>
+
+</html>

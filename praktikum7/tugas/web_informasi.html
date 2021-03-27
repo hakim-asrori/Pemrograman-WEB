@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Buku</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #buku {
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: rgba(237, 242, 247, 1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #buku section {
+      width: 250px;
+      border: 1px solid rgba(0, 0, 0, .125);
+      border-radius: 5px;
+      display: flex;
+      flex: auto;
+      flex-direction: column;
+      background-color: white;
+      margin: 25px 10px;
+    }
+
+    #buku section img {
+      width: 100%;
+    }
+
+    #buku section .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    #buku section p.body {
+      text-align: justify;
+      margin: 10px 10px;
+    }
+
+    /* #laravel {
+      order: 1;
+    }
+
+    #react {
+      order: 2;
+    } */
+
+    #buku section .footer {
+      height: 75px;
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eee;
+    }
+
+    #buku section .footer button {
+      padding: 10px;
+      border: 1px solid #0400ff;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: #0400ff;
+      background-color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .5s ease-in-out;
+    }
+
+    #buku section .footer button:hover {
+      background-color: #0400ff;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="buku">
+    <section id="android">
+      <img src="images/img1.jpg" alt="">
+      <div class="title">Android Studio</div>
+      <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa incidunt? Suscipit
+        et placeat
+        iure quo nulla laboriosam modi.</p>
+      <div class="footer"><button>Selanjutnya</button></div>
+    </section>
+    <section id="laravel">
+      <img src="images/img2.jpg" alt="">
+      <div class="title">Laravel 6</div>
+      <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa incidunt? Suscipit
+        et placeat
+        iure quo nulla laboriosam modi.</p>
+      <div class="footer"><button>Selanjutnya</button></div>
+    </section>
+    <section id="codeigniter">
+      <img src="images/img3.jpg" alt="">
+      <div class="title">Codeigniter</div>
+      <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa incidunt? Suscipit
+        et placeat
+        iure quo nulla laboriosam modi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, eaque.</p>
+      <div class="footer"><button>Selanjutnya</button></div>
+    </section>
+    <section id="react">
+      <img src="images/img4.jpg" alt="">
+      <div class="title">React.JS</div>
+      <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa incidunt? Suscipit
+        et placeat
+        iure quo nulla laboriosam modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eum, nam quisquam
+        corporis deleniti quibusdam fugiat sed veritatis vero modi!</p>
+      <div class="footer"><button>Selanjutnya</button></div>
+    </section>
+  </div>
+</body>
+
+</html>

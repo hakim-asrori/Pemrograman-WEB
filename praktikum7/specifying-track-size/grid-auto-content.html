@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grid Auto Content</title>
+  <style>
+    #layout {
+      display: grid;
+      grid-template-rows: 100px 200px 100px;
+      grid-template-columns: 200px auto 200px;
+    }
+
+    body {
+      color: white;
+      font-size: 1.2em;
+    }
+
+
+    #one {
+      background-color: red;
+    }
+
+    #two {
+      background-color: orange;
+    }
+
+    #three {
+      background-color: green;
+    }
+
+    #four {
+      background-color: darkcyan;
+    }
+
+    #five {
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="layout">
+    <div id="one">One</div>
+    <div id="two">Two</div>
+    <div id="three">Three</div>
+    <div id="four">Four</div>
+    <div id="five">Five</div>
+  </div>
+</body>
+
+</html>

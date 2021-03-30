@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grid Line Numbers Names</title>
+  <style>
+    body {
+      color: white;
+      font-size: 1.2em;
+    }
+
+    #layout {
+      display: grid;
+      grid-template-rows: [header-start] 100px [header-end content-start] 400px [footer-start] 100px;
+      grid-template-columns: [ads] 200px [main] 500px [links] 200px;
+    }
+
+    #one {
+      background-color: red;
+    }
+
+    #two {
+      background-color: orange;
+    }
+
+    #three {
+      background-color: green;
+    }
+
+    #four {
+      background-color: darkcyan;
+    }
+
+    #five {
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="layout">
+    <div id="one">One</div>
+    <div id="two">Two</div>
+    <div id="three">Three</div>
+    <div id="four">Four</div>
+    <div id="five">Five</div>
+  </div>
+</body>
+
+</html>

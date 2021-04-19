@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Board</title>
+</head>
+
+<body>
+  <script>
+    let nilai = Number(prompt("Masukan ukuran grid", "8"));
+    let total = (nilai * nilai) + nilai;
+    let grid = "";
+    for (let i = 0; i < total; i++) {
+      if (i % (nilai + 1) == 0) {
+        grid += "\n";
+      } else if (i % 2 == 0) {
+        grid += "#";
+      } else {
+        grid += " ";
+      }
+    }
+    console.log(grid);
+  </script>
+</body>
+
+</html>
